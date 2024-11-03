@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "synapsei5g8ks4"
+		},
+		"ls_datalakestorage_accountKey": {
+			"value": ""
+		},
+		"synapsei5g8ks4-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:synapsei5g8ks4.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"ls_datalakestorage_properties_typeProperties_url": {
+			"value": "https://datalakesgjazd3.dfs.core.windows.net/"
+		},
+		"ls_http_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/MicrosoftLearning/dp-203-azure-data-engineer/master/Allfiles/labs/01/adventureworks/products.csv"
+		},
+		"synapsei5g8ks4-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://datalakei5g8ks4.dfs.core.windows.net"
+		}
+	}
+}
